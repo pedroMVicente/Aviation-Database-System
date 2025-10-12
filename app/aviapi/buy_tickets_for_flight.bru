@@ -1,0 +1,23 @@
+meta {
+  name: buy_tickets_for_flight
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:8080/compra/12
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nif": "100000002",
+    "bilhetes": [
+      ["Pedro Vicente", true],
+      ["Pedro Jerónimo", false]
+    ]
+  }
+  
+  
+}
